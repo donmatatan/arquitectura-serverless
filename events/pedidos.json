@@ -1,0 +1,9 @@
+{
+  "version": "2.0",
+  "routeKey": "POST /pedidos",
+  "rawPath": "/pedidos",
+  "headers": { "content-type": "application/json" },
+  "requestContext": { "http": { "method": "POST", "path": "/pedidos" } },
+  "body": "{\"producto\":\"Teclado mecánico\",\"cantidad\":2,\"cliente\":\"Cliente Demo\"}",
+  "isBase64Encoded": false
+}

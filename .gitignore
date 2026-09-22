@@ -1,0 +1,19 @@
+# Artefactos generados por los scripts (se recrean solos al ejecutar)
+build/
+
+# Python
+**/__pycache__/
+*.pyc
+
+# Empaquetados propios
+*.zip
+
+# Sistema / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Credenciales / secretos (por si alguna vez cae algo aquí por error)
+.env
+credentials
+*.pem

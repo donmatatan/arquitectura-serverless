@@ -1,0 +1,6 @@
+{
+  "version": "2.0",
+  "routeKey": "GET /usuarios",
+  "rawPath": "/usuarios",
+  "requestContext": { "http": { "method": "GET", "path": "/usuarios" } }
+}

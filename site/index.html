@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Serverless Orders — Módulo 8</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Serverless Orders</h1>
+    <p class="subtitulo">Módulo 8 — Serverless Inteligente (S3 + API Gateway + Lambda + DynamoDB)</p>
+  </header>
+
+  <main>
+    <section class="tarjeta">
+      <h2>Usuarios</h2>
+      <p class="ayuda">GET /usuarios — Lambda m8-usuarios</p>
+      <ul id="lista-usuarios"><li>Cargando...</li></ul>
+    </section>
+
+    <section class="tarjeta">
+      <h2>Crear pedido</h2>
+      <p class="ayuda">POST /pedidos — Lambda m8-pedidos → DynamoDB</p>
+      <form id="form-pedido">
+        <label>Producto
+          <input type="text" id="producto" required placeholder="Teclado mecánico">
+        </label>
+        <label>Cantidad
+          <input type="number" id="cantidad" min="1" value="1" required>
+        </label>
+        <label>Cliente
+          <input type="text" id="cliente" required placeholder="Nombre del cliente">
+        </label>
+        <button type="submit">Crear pedido</button>
+      </form>
+      <p id="mensaje" class="mensaje" hidden></p>
+    </section>
+
+    <section class="tarjeta">
+      <h2>Pedidos</h2>
+      <p class="ayuda">GET /pedidos — se actualiza automáticamente</p>
+      <button id="btn-actualizar" type="button">Actualizar lista</button>
+      <table id="tabla-pedidos">
+        <thead>
+          <tr><th>Order ID</th><th>Producto</th><th>Cant.</th><th>Cliente</th><th>Estado</th><th>Creado</th></tr>
+        </thead>
+        <tbody><tr><td colspan="6">Cargando...</td></tr></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>API: <code id="api-url"></code></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
