@@ -55,7 +55,8 @@ serverless-m8/
 │   └── pedidos.json
 ├── site/                   # Frontend (index.html, style.css, app.js)
 └── informe/
-    ├── informe-modulo8.md  # Informe completo de la evaluación
+    ├── informe.md          # Informe completo de la evaluación
+    ├── informe.pdf         # Informe completo de la evaluación en pdf
     └── imagenes/           # Capturas referenciadas en el informe
 ```
 
@@ -76,5 +77,5 @@ bash 04-s3.sh           # Bucket S3 + hosting estático, ya conectado a la API
 
 ## Informe completo
 
-El desarrollo lección por lección, las validaciones y las conclusiones están en [`informe/informe-modulo8.md`](informe/informe.md).
+El desarrollo lección por lección, las validaciones y las conclusiones están en [`informe/informe.md`](informe/informe.md).
 
