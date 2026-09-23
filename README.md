@@ -46,6 +46,7 @@ serverless-m8/
 ├── 03-apigateway.sh        # Lección 3 — HTTP API + rutas
 ├── 04-s3.sh                # Lección 1 — Bucket + hosting estático + frontend
 ├── 99-limpiar.sh           # Borra todos los recursos del proyecto
+├── Enunciado de proyecto   # Enunciado del proyecto como tal. Se describe todo lo solicitado.
 ├── lambda/
 │   ├── usuarios/lambda_function.py
 │   └── pedidos/lambda_function.py
@@ -75,13 +76,5 @@ bash 04-s3.sh           # Bucket S3 + hosting estático, ya conectado a la API
 
 ## Informe completo
 
-El desarrollo lección por lección, las validaciones y las conclusiones están en [`informe/informe-modulo8.md`](informe/informe-modulo8.md).
+El desarrollo lección por lección, las validaciones y las conclusiones están en [`informe/informe-modulo8.md`](informe/informe.md).
 
-## Limitaciones de AWS Academy encontradas
-
-- El provider de AWS en Terraform choca con la SCP del Learner Lab → todo se hizo con AWS CLI.
-- Las credenciales de la sesión (access key / secret key / session token) vencen cada vez que se reinicia el Learner Lab y hay que renovarlas en `~/.aws/credentials`, o la CLI empieza a devolver errores de permisos que en realidad son de sesión vencida.
-
-## Autor
-
-[donmatatan](https://github.com/donmatatan/) — Bootcamp Arquitecto Cloud, Talento Digital Reinvéntate
